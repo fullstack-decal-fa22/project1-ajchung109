@@ -1,0 +1,92 @@
+/* universal selector */
+* {
+    box-sizing: border-box;
+    color: black; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:link {
+    background-color: white;
+    color: black;
+    border: 4px yellowgreen; 
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-around;
+    margin-left: 30px;
+    padding: 10%% 30%;
+}
+
+/* :hover pseudoselector  */
+a:hover{
+    background-color: black;
+    color: yellowgreen;
+}
+
+h1 {
+    color:yellowgreen; 
+    /* use of font property in css */
+    font: normal normal bold 300% monospace; 
+}
+ 
+h3 {
+    color: pink; 
+}
+
+h6 {
+    color: red; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+li{
+    color: white; 
+}
+
+/* all of my .[class] selectors  */
+
+/* css for flex box displaying my tabs */
+.tabs{
+    position: fixed;
+    top: 1%; 
+    right: 1%; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tab{
+    display:flex; 
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    background-color: greenyellow;
+    padding: 10px; 
+}
+
+.grid-item{
+    background-color: black;
+    border: 1px solid yellowgreen;
+    padding: 20px; 
+    text-align: center;
+    color: white ;
+}
+
+.hidden-img {
+    display: none; 
+    border-radius: 5px; 
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* #[id] selectors  */
+#heart {
+    display: inline-block;
+    color: pink; 
+    padding: 10px;
+}
+

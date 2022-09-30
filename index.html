@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's 'Website' : ) (heheHOOHOOhAHA)</title>
+    <author>Anna Chung :></author>
+    <link rel="stylesheet" href="styles.css"> </link>
+</head>
+<body>
+    <!-- div w/ flexbox -->
+    <div class="tabs">
+        <h2> <a href="#about" class="tab">About</a></h2>
+        <h2> <a href="#work" class="tab">Work</a></h2>
+        <h2> <a href="#contact" class="tab">Contact</a></h2>
+    </div>
+
+    <div id="about">
+        <h1>About</h1>
+        <h5>Henlo! My name is Anna! I'm an intended CS & Astrophysics major!
+            I'm a big fan of theorizing about dark matter and jamming to sorting 
+            algorithm videos :>! I'm a competitive piano player & professional procrastinator 
+            on the side :p. 
+        </h5>
+        <!-- my one button -->
+        <button onclick="reveal()" id="btn">click me</button>
+        <script>
+            function reveal(){
+                document.getElementById('bun-image').style.display="block"; 
+                document.getElementById('btn').style.display="none"; 
+            }
+        </script>
+        <h6>trust me, u won't regret it ^-^</h6>
+        <!-- my one use of image -->
+        <img src='bananabun.jpg' alt="bananabun" class="hidden-img" id="bun-image"> 
+    </div>
+
+    <div id="work"> 
+        <h1>Work</h1>
+        <p>**as badly abridged from my resume and memory so i have enuf text**</p>
+        <!-- div w/ grid --> 
+        <div class="grid">
+            <div class="grid-item">
+                <h3>Academic Intern (UC Berkeley)</h3>
+                <ul>
+                    <li>solidifed understanding of dynamic data structures, effective storage management
+                        and sorting & searching algorithms (wowowow)
+                    </li>
+                    <li>guided students thru da debugging process and encouraged good programming practices </li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Intern (CodeDay)</h3>
+                <ul>
+                    <li>developed an online multiplayer game using Python & HTML/CSS/JS</li>
+                    <li>created a supa basic user queue that assigned the players to rooms w/ a timeout feature and used Flask Socket.io to 
+                        help communicate between da front & back end 
+                    </li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Instructor (Mathnasium)</h3>
+                <ul>
+                    <li>instructed 1-4 kiddos at the same time on math ranging from levels K thru 12</li>
+                    <li>prepared content & learning plans for each student and adjusted as needed</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Teacher's Assistant (TOCS)</h3>
+                <ul>
+                    <li>helped to prepare material and lesson plans for elementary Mandarin classes</li>
+                    <li>answered questions and taught material</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Social Media & Marketing Director (EnableTech)</h3>
+                <ul>
+                    <li>I'm da marketing director for this one club which means recruitment szn is not fun for me</li>
+                    <li>i run da social medias and update da website yay (it's just wordpress tho lol)</li>
+                    <li>i also make merch and stickers oooo</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Concert Pianist (TO Phil)</h3>
+                <ul>
+                    <li>i play sum concerts sometimes w/ my local philharmonic</li>
+                    <li>make cool music and i get to raise money to fund da arts back home w/ the concert profits yay</li>
+                    <li>play sum good concertos very nice</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Video Editor (SJ Foundation)</h3>
+                <ul>
+                    <li>i edit videos oolala</li>
+                    <li>helped to promote the foundation's charity gala one summer</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>Professional Procrastinator</h3>
+                <ul>
+                    <li>perfected the art of putting things off</li>
+                    <li>sleep>>>>hw sorry not sorry</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>mother to a very spoiled rabbit</h3>
+                <ul>
+                    <li>i give her the best and only the best</li>
+                    <li>my rabbit only eats the the finest leafy green</li>
+                </ul>
+            </div>
+    
+        </div>
+    </div>
+    
+    <div id="contact">
+        <h1>Contact</h1>
+        <h2><a href="https://www.linkedin.com/in/anna-chung-60588321b/" target="_blank">Add me on Linkedln :)</a></h2>
+        <h2><a href="mailto:ajchung@berkeley.edu">Email Me!</a></h2>
+    </div>
+
+    <h1>XTRA sORt of SeCrEt (not rly) SeCTion</h1>
+    <div>
+        <h6 >click the heart below for a suprise...</h6>
+        <!-- a tag that opens to a new tab -->
+        <h4><a href="https://www.youtube.com/watch?v=SyPjwxHxbus" target="_blank" id="heart"><3</a></h2>
+    </div>
+
+    <!-- my functional form componenet -->
+    <div>
+        <form onsubmit="compliment(this)" >
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" name="name"> 
+            <input type="submit" >
+        </form>
+        <script>
+            function compliment(form){
+                var name = document.getElementById("name").value;
+                var message = "Hey " + name + "! You're looking extra cute today!! :)"
+                alert(message);  
+            }
+        </script>
+    </div>
+    
+</body>
+</html>
